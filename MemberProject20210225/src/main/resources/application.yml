@@ -1,0 +1,23 @@
+# 서버 포트 설정
+
+server:
+  port: 8092
+
+# DB 연경 설정
+# url ?server전에 내가 사용하는 데이터베이스(mySQL) 붙여넣기
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboots0225?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: a123456789
+    
+  jpa:  
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+# create로하면 새롭게 시작 할때는 매번 계속 다시 만든다
+   
+  
+  
